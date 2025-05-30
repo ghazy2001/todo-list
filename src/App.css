@@ -1,0 +1,18 @@
+.todocard:hover {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+}
+.todocard {
+  transition: all 0.2s !important;
+}
+
+@font-face {
+  font-family: A;
+  src: url("../public/fonts/NotoSansArabic-Black.ttf");
+  font-weight: normal;
+}
+
+.search {
+  margin-top: 20px;
+}
