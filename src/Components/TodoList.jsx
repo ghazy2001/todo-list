@@ -14,24 +14,17 @@ import TextField from "@mui/material/TextField";
 import { useContext } from "react";
 import { useEffect } from "react";
 import { TodosContext } from "../contexts/todocontext";
-import { useMemo } from "react";
 
 export default function TodoList() {
   const { todos, setTodos } = useContext(TodosContext);
   const [titleinput, settitleinput] = useState("");
   const [displaytodostype, setdisplaytodostype] = useState("all");
-
-  const comptodos = useMemo(() => {
-    return todos.filter((t) => {
-      return t.completed;
-    });
-  }, [todos]);
-
-  const notcomptodos = useMemo(() => {
-    return todos.filter((t) => {
-      return !t.completed;
-    });
-  }, [todos]);
+  const comptodos = todos.filter((t) => {
+    return t.completed;
+  });
+  const notcomptodos = todos.filter((t) => {
+    return !t.completed;
+  });
   let todostoberendered = todos;
   if (displaytodostype == "completed") {
     todostoberendered = comptodos;
