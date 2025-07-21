@@ -1,5 +1,5 @@
 import TodoList from "./Components/TodoList";
-import "./app.css";
+import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
