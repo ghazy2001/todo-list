@@ -3,7 +3,7 @@ import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
-import { TodosContext } from "./contexts/todocontext";
+import { TodosContext } from "./Contexts/TodoContext";
 import { purple } from "@mui/material/colors";
 const theme = createTheme({
   typography: {

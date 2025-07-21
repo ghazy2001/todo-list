@@ -13,7 +13,7 @@ import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 import { useContext } from "react";
 import { useEffect } from "react";
-import { TodosContext } from "../contexts/todocontext";
+import { TodosContext } from "../Contexts/TodoContext";
 
 export default function TodoList() {
   const { todos, setTodos } = useContext(TodosContext);

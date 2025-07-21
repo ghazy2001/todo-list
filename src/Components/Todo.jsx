@@ -8,7 +8,7 @@ import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { IconButton } from "@mui/material";
 import { useContext } from "react";
-import { TodosContext } from "../contexts/todocontext";
+import { TodosContext } from "../Contexts/TodoContext";
 import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
